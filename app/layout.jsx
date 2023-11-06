@@ -5,7 +5,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
   title: 'Bubbly',
-  description: 'An application to generate VFX bubble messages',
+  description: 'This project provides a tool to simulate text bubbles on a green background, which can be used as a visual effect (VFX) for videos. It allows you to customize the background color of the text and the width of the text bubbles.',
 }
 
 export default function RootLayout({ children }) {
