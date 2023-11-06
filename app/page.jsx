@@ -76,6 +76,7 @@ export default function Home() {
         className={styles.messages}>
         {messages.length > 0 && messages.map(({ text }, index) => (
           <BubbleMessage
+            key={index}
             className={`${styles.bbmm} ${messages.length === 4 && index === 0 ? styles.eliminateLast : ''}`}
             text={text} />
         ))}
