@@ -68,4 +68,4 @@ const ToolMenu = ({ screenRef }) => {
     )
 }
 
-export default ToolMenu
+export default ToolMenu;
