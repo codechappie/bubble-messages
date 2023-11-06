@@ -1,0 +1,35 @@
+.bubbleMessage {
+    position: relative;
+    background-color: #ffffff;
+    padding: 0.6rem 1.2rem;
+    line-height: 1.6rem;
+    max-width: fit-content;
+    display: flex;
+    margin: 10px;
+    left: 10px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: #000000;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 20px;
+        background: #ffffff;
+        left: -8px;
+        bottom: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 25px;
+        background: var(--general-background);
+        bottom: -2px;
+        left: -15px;
+        border-bottom-right-radius: 15px;
+    }
+}

@@ -1,0 +1,97 @@
+.toolMenu {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2147483647;
+
+    .showToolMenu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+
+        button {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        &.hidden {
+            &:hover {
+                button {
+                    transform: translateX(-50px);
+                }
+            }
+            button {
+                right: -50px;
+            }
+        }
+    }
+    .container {
+        background: #242424;
+        margin-top: 50px;
+        width: 300px;
+        height: auto;
+        min-height: 100px;
+        max-height: calc(100vh - 50px);
+        overflow: hidden;
+        overflow-y: auto;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        padding: 20px;
+        padding-right: 10px;
+        position: relative;
+        right: -300px;
+        transition: right ease-in-out 0.5s;
+
+        &.show {
+            right: 0;
+            transition: right ease-in-out 0.5s;
+        }
+
+        .chooseBgColor {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 15px;
+
+            .picker {
+                width: 100%;
+                height: 50px;
+                border-radius: 40px;
+                overflow: hidden;
+                border: 4px solid #494949;
+
+                & input {
+                    width: 100%;
+                    height: 100%;
+                    scale: 1.5;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .maxWidth {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .buttons {
+                display: flex;
+                align-items: stretch;
+                justify-content: stretch;
+                justify-items: stretch;
+                gap: 10px;
+
+                button {
+                    width: 100%;
+                    padding: 4px 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

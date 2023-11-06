@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Bubble Text Simulator
 
-## Getting Started
+![Bubble Text Simulator Demo](https://imgur.com/OeRNoG5.gif)
 
-First, run the development server:
+## Description
+
+This project provides a tool to simulate text bubbles on a green background, which can be used as a visual effect (VFX) for videos. It allows you to customize the background color of the text and the width of the text bubbles.
+
+## Todo List
+
+- [ ] Implement a feature to automatically remove the oldest message after a few seconds, based on the word count, allowing users to read the entire text before it disappears.
+
+
+## Features
+
+- Configure the background color of the text.
+- Adjust the width of the text bubbles.
+
+## Installation
+
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/codechappie/bubble-messages.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd bubble-messages
+```
+
+3. Install the dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+## Usage
+
+1. Start the application:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Open your browser and go to http://localhost:3000.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3. Type your text on the green background and adjust the settings to your preferences.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Pending Feature
 
-## Learn More
+Automatically remove the oldest message after a few seconds, depending on the word count, allowing the entire text to be read before disappearing
 
-To learn more about Next.js, take a look at the following resources:
+## Contributions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you'd like to contribute to this project, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Fork the repository.
+2. Create a new branch for your changes:
 
-## Deploy on Vercel
+```bash
+git checkout -b feature/new_feature
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Make your changes and commit:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git add .
+git commit -m "fix: [description of the change]"   # For fixes
+# or
+git commit -m "feat: [description of the change]"  # For new features
+```
+
+4. Push to your branch:
+
+```bash
+git push origin feature/new_feature
+```
+
+5. Open a Pull Request on GitHub.
+
+## Pull Request format
+
+* `fix: …` will bump the fix version, e.g. 1.2.3 → 1.2.4
+* `feat: …` will bump the feature version, e.g. 1.2.3 → 1.3.0
+
+## License
+
+See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
