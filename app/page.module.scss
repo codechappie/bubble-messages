@@ -1,0 +1,49 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 2rem;
+  min-height: 100vh;
+  background: var(--general-background);
+  position: relative;
+
+  .messagesContainer {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    outline: none;
+    z-index: 2147483646;
+    cursor: default;
+  }
+
+  .messages {
+    & > * {
+      opacity: 1;
+    }
+    .bbmm {
+      display: flex;
+    }
+    & .eliminateLast {
+      opacity: 0;
+      animation: eliminateMessage 1.5s;
+    }
+  }
+  .message {
+    min-height: 64px;
+    & > * {
+      margin-top: 0;
+    }
+  }
+}
+
+@keyframes eliminateMessage {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
